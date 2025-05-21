@@ -1,0 +1,61 @@
+@import './variables.css';
+
+body {
+  background: var(--gris-fondo);
+  font-family: var(--fuente-principal);
+  color: var(--gris-texto);
+}
+
+.container-graficos {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.titulo-principal {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--verde-oscuro);
+  letter-spacing: 1px;
+}
+
+.grid-graficos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid-graficos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card-grafico {
+  background: var(--blanco);
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 24px rgba(16, 185, 129, 0.15);
+  padding: 2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid var(--verde-claro);
+}
+
+.card-grafico:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 32px rgba(34, 197, 94, 0.18);
+}
+
+.card-titulo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--verde-medio);
+}
+
+.card-imagen {
+  width: 100%;
+  border-radius: 1rem;
+  border: 2px solid var(--verde-acento);
+}

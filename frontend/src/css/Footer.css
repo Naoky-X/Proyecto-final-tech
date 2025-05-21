@@ -1,0 +1,26 @@
+@import './variables.css';
+
+.site-footer {
+  background: var(--verde-oscuro);
+  padding: 2.5rem 0 1.5rem 0;
+  color: var(--blanco);
+  font-size: 1rem;
+  border-top: 4px solid var(--verde-acento);
+  font-family: var(--fuente-principal);
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--verde-acento);
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    text-align: center;
+  }
+  .site-footer .text-md-right {
+    text-align: center !important;
+  }
+}
